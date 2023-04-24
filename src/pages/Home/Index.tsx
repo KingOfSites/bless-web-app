@@ -14,8 +14,8 @@ export default function Home() {
             <div className="flex flex-col sm:justify-center items-center ">
               <h2>Faça o Login para acessar</h2>
               <br></br>
-              <Input children={undefined}></Input><br></br>
-              <Input children={undefined}></Input><br></br>
+              <input id="email" type="email" className="input" placeholder="E-mail" required={true} /><br></br>
+              <input id="password" type="password" className="input" placeholder="Senha" required={true} /><br></br>
             </div>
             <div className="flex flex-col sm:justify-center items-center ">
             <Button children={children}></Button>
