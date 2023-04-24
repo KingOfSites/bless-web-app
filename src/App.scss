@@ -1,38 +1,299 @@
-.App {
-  text-align: center;
+
+body {
+  margin: 0;
+  background-color: #222222;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 56px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+.App-link {
+  color: #9400d3;
+}
+
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.bg-gradient-to-br {
+  background: linear-gradient(to bottom right, #8b008b, #4b0082, #9400d3);
+}
+
+.from-purple-800 {
+  background-color: #4b0082;
+}
+
+.via-purple-700 {
+  background-color: #9400d3;
+}
+
+.to-purple-900 {
+  background-color: #8b008b;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.sm\:justify-center {
+  @media (min-width: 640px) {
+    justify-content: center;
   }
 }
+
+.items-center {
+  align-items: center;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.sm\:pt-0 {
+  @media (min-width: 640px) {
+    padding-top: 0;
+  }
+}
+
+.sm\:w-1\/2 {
+  @media (min-width: 640px) {
+    width: 100%;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.sm\:justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-100 {
+  color: #f7fafc;
+}
+
+.relative {
+  position: relative;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.sm\:max-w-sm {
+  max-width: 20rem;
+}
+
+.sm\:w-1\/2 {
+  width: 50%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.text-gray-600 {
+  color: #cbd5e0;
+}
+
+.text-gray-400 {
+  color: #a0aec0;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 45px;
+  background-color: #6C6C6C;
+  border: 1px solid #C5C5C5;
+  border-radius: 4px;
+  cursor: cursor;
+  transition: all 0.2s ease-in-out;
+  
+  &::placeholder {
+    color: #C5C5C5;
+  }
+}
+
+.button {
+  width: 400px;
+  height: 45px;
+  background-color: #9400D3;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+
+  &::placeholder {
+    color: white;
+  }
+
+  &:hover {
+    background-color: #8B008B;
+  }
+}
+
+
+$google-icon-size: 20px;
+
+.loginButton {
+  width: 400px;
+  height: 45px;
+  background-color: #222222;
+  border: 1px solid #343434;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #1d1d1d;
+  }
+
+  .googleIcon {
+    width: $google-icon-size;
+    height: $google-icon-size;
+    margin-right: 10px;
+  }
+}
+
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 640px) {
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input {
+    width: 120%;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    width: 350px;
+    margin-bottom: 10px;
+  }
+
+  .loginButton {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+
+  .sm\:w-1\/2 {
+    width: 75%;
+  }
+
+}
+
+/* Estilos para dispositivos maiores */
+@media (min-width: 641px) {
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .input {
+    margin-right: 10px;
+  }
+
+  .checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
+/* Estilos comuns a todos os dispositivos */
+.login-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0%;
+}
+
+
