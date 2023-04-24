@@ -134,7 +134,7 @@ h2 {
 }
 
 .w-screen {
-  width: 100vw;
+  width: 100%;
 }
 
 .h-screen {
@@ -209,6 +209,11 @@ h2 {
 
 
 $google-icon-size: 20px;
+.googleIcon {
+  width: $google-icon-size;
+  height: $google-icon-size;
+  margin-right: 10px;
+}
 
 .loginButton {
   width: 400px;
@@ -228,11 +233,7 @@ $google-icon-size: 20px;
     background-color: #1d1d1d;
   }
 
-  .googleIcon {
-    width: $google-icon-size;
-    height: $google-icon-size;
-    margin-right: 10px;
-  }
+
 }
 
 
@@ -261,7 +262,7 @@ $google-icon-size: 20px;
 
 
   .sm\:w-1\/2 {
-    width: 75%;
+    width: 100%;
   }
 
 }
@@ -284,6 +285,10 @@ $google-icon-size: 20px;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
+  }
+
+  .m:w-full {
+    width: 100%;
   }
 }
 
