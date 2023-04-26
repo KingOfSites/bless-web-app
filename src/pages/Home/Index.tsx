@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Button } from '../../components/Button';
 import { Input } from '../../components/Input';
-import Logo from "../../assets/google-icon.png";
+import ButtonGoogle from '../../components/ButtonGoogle';
+
 import Image from "react";
 export const children = 'Login'
 
@@ -11,14 +12,15 @@ export default function Home() {
     <>      
          <div className="login-container flex flex-wrap sm:justify-center items-center">
           <div className="flex flex-col sm:justify-center items-center sm:w-1/2">
+            {/* componente de título */}
             <div className="flex items-center">
               <h1>Login</h1>
             </div>
-            <div className="flex flex-col sm:justify-center items-center ">
+            <div className="flex flex-col sm:justify-center items-center">
               <h2>Faça o Login para acessar</h2>
-              <br></br><img className="googleIcon" src={Logo}/>
-              <Input id="email" type="email" className="input" placeholder="E-mail" required={true} /><br></br>
-              <Input id="password" type="password" className="input" placeholder="Senha" required={true} /><br></br>
+              <ButtonGoogle onClick={()=>{}}></ButtonGoogle>
+              <Input id="email" type="email" className="input" placeholder="E-mail" required={true} />
+              <Input id="password" type="password" className="input" placeholder="Senha" required={true} />
             </div>
             <div className="flex flex-col sm:justify-center items-center ">
             <Button children={children}></Button>
