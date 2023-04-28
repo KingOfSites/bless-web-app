@@ -9,6 +9,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.padding-form {
+  padding: 0px 15px;
+}
+
 h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 56px;
@@ -26,6 +31,16 @@ h2 {
   color: #9400d3;
 }
 
+.login-background { 
+  background: linear-gradient(rgba(122, 0, 174, 0.8),
+      rgba(122, 0, 174, 0.8)), 
+      url('./assets/mulher.png') ; 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  
+}
 
 .max-w-full {
   max-width: 100%;
@@ -45,10 +60,6 @@ h2 {
 
 .to-purple-900 {
   background-color: #8b008b;
-}
-
-.flex {
-  display: flex;
 }
 
 .flex-wrap {
@@ -87,7 +98,11 @@ h2 {
 
 .flex-1 {
   flex: 1;
-  width: 100%;
+
+}
+
+.width100perc {
+    width: 100%;
 }
 
 .flex-wrap {
@@ -175,7 +190,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 376px;
   height: 30px;
   background-color: #6C6C6C;
   border: 1px solid #C5C5C5;
@@ -191,7 +205,7 @@ h2 {
 }
 
 .button {
-  width: 400px;
+  width:100%;
   height: 60px;
   background-color: #9400D3;
   border: none;
@@ -227,7 +241,7 @@ $google-icon-size: 20px;
 }
 
 .button-google {
-  width: 400px;
+  width: 100%;
   height: 45px;
   background-color: #222222;
   border: 1px solid #343434;
@@ -265,12 +279,12 @@ $google-icon-size: 20px;
   }
 
   .button {
-    width: 350px;
+    width: 100%;
     margin-bottom: 20px;
   }
 
   .loginButton {
-    width: 300px;
+    width: 100%;
     margin-bottom: 20px;
   }
 
