@@ -5,8 +5,6 @@ import Logo from "../../assets/google-icon.png";
 import Image from "react";
 export const children = "Login";
 
-export const children = "Login";
-
 export default function Home() {
   return (
     <>
