@@ -1,0 +1,35 @@
+.container-form-login{
+  display: flex;
+  flex-direction: column;
+  background-color: red($color: #000000);
+  flex:1;
+  display: flex;
+}
+
+.column {
+  width: 100%;
+  margin-bottom: 20px
+}
+
+.column-text-overlay {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-weight: 400;
+  border: none;
+  font-size: var(--fs-400) !important;
+  letter-spacing: 1px;
+  background: #6C6C6C;
+  color: #fff;
+  border-radius: 8px;
+  height: 50px;
+
+
+
+
+}

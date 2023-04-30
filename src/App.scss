@@ -24,8 +24,15 @@ body {
     .input-element:focus {
       -webkit-text-fill-color: currentcolor !important;
       caret-color: currentcolor !important;
-      -webkit-box-shadow: 0 0 0px 1000px #c71c1c inset !important;
-      box-shadow: 0 0 0px 1000px #c71c1c inset !important;
+      -webkit-box-shadow: 0 0 0px 1000px #6C6C6C inset !important;
+      box-shadow: 0 0 0px 1000px #6C6C6C inset !important;
+
+        outline-color: #C5C5C5;
+          /* altere a cor para a desejada */
+          outline-style: solid;
+          outline-width: 1px;
+     
+     
     }
   
     input:-webkit-autofill,
@@ -36,7 +43,12 @@ body {
       -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
       background-color: rgba(255, 0, 0, 0) !important;
       color: currentcolor !important;
+      font-size: 1rem;
+
+     
     }
+    
+
 
 
 .padding-form {
@@ -222,14 +234,15 @@ input {
   border: none;
   font-size: var(--fs-400) !important;
   letter-spacing: 1px;
-  background: #21202d;
+  background: #6C6C6C;
   color: #fff;
   border-radius: 8px;
-  height: 52px;
+  height: 45px;
+  font-size: 1rem;
 }
 
 input:focus{
-  border: 2px soli#9400D3 !important;
+  border: 1px solid #C5C5C5 !important;
 }
 
 .button {
@@ -254,6 +267,14 @@ input:focus{
   &:hover {
     background-color: #8B008B;
   }
+}
+
+.label{
+    margin-bottom: 0.25rem;
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    font-size: var(--fs-400);
 }
 
 .separator20px
@@ -302,7 +323,6 @@ $google-icon-size: 20px;
 
   .input {
     width: 100%;
-    margin-bottom: 20px;
 
   }
 
@@ -333,7 +353,6 @@ $google-icon-size: 20px;
   }
 
   .input {
-    margin-bottom: 20px;
     padding: 15px 12px;
     width: 100%;
   }

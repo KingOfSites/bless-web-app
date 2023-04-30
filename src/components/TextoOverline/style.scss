@@ -1,0 +1,25 @@
+.container-overlay {
+  position: relative;
+  text-align: center;
+}
+
+.line {
+  border: none;
+  height: 1px;
+  background-color: #5F5F5F;
+  margin-bottom: 20px;
+  width: 100%;
+  
+}
+
+.overlay-text {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #222;
+  padding: 0 10px;
+  color: #9400D3;
+  font-size: 16px;
+  width: 40%;
+}
