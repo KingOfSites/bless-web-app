@@ -11,13 +11,10 @@ export default function Home() {
   return (
     <>      
          <div className="login-container flex flex-wrap sm:justify-center items-center">
-          <div className="flex flex-col sm:justify-center items-center sm:w-1/2">
+          <div className="flex flex-col sm:justify-center items-center sm:w-1/2 login-form-content padding-form ">
             {/* componente de título */}
-            <div className="flex items-center">
-              <h1>Login</h1>
-            </div>
-            <div className="flex flex-col sm:justify-center items-center  padding-form">
-              <h2>Faça o Login para acessar</h2>
+            <div className="flex flex-col sm:justify-center items-center  width-100perce" >
+              <h2>Bem-vindo à Bless</h2>
               <ButtonGoogle onClick={()=>{}}></ButtonGoogle>
               <Input id="email" type="email" className="input" placeholder="E-mail" required={true} />
               <Input id="password" type="password" className="input" placeholder="Senha" required={true} />
