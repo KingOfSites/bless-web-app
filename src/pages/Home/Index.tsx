@@ -12,7 +12,7 @@ export default function Home() {
           <div className="flex flex-col sm:justify-center items-center sm:w-1/2 login-form-content padding-form ">
             {/* componente de título */}
   
-            <div className="flex flex-col sm:justify-center items-center ">
+            <div className="flex flex-col sm:justify-center width100perc">
               <FormLogin />
             </div>
           </div>

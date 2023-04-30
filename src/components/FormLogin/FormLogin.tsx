@@ -12,7 +12,7 @@ export const children = 'ENTRAR'
 export default function FormLogin() {
   return (
     <>
-       <div className="container-form-login">
+       <div className="container-form-login ">
         <div className="column">
           <h2>Bem-vindo à Bless</h2>
         </div>
