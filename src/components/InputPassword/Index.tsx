@@ -9,7 +9,7 @@ function InputPassword() {
   
   return (
     <div className="password-input">
-      <input className='input input-element' type={showPassword ? 'text' : 'password'} placeholder="Senha" />
+      <input className='input input-element' type={showPassword ? 'text' : 'password'}  />
       <FontAwesomeIcon 
         icon={showPassword ? faEyeSlash : faEye}
         onClick={() => setShowPassword(!showPassword)}
