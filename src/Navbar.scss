@@ -389,7 +389,6 @@
   width: 100%;
   height: 60px;
   background-color: #222222;
-
   display: flex;
   align-items: center;
 }
@@ -475,9 +474,169 @@
   width: 90%;
   margin: 0 auto;
   height: 180px;
+  margin-bottom: 15px;
 }
 .card img {
   width: 100%;
   height: 100%;
   margin-bottom: 15px;
+}
+// media 768px - 430 nav bar esquerda
+
+@media (max-width: 768px) {
+  .container-navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    position: fixed;
+
+    height: 100px;
+    right: 0;
+    top: 90%;
+  }
+  .container-navbar .container-button,
+  h2 {
+    display: none;
+  }
+  .container-navbar > .name-usuario > button {
+    display: flex;
+    width: 90px;
+    height: 70px;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .opcoes-usuario h3 {
+    display: none;
+    width: 45px;
+    height: 45px;
+  }
+  .opcoes-usuario {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-usuarios {
+    width: 15%;
+    height: 50px;
+    margin: 0%;
+  }
+
+  .container-usuarios img {
+    width: 45%;
+    height: 70%;
+
+    margin: 0;
+  }
+  .container-usuarios > .assinatura {
+    margin-top: 2px;
+    margin: 0;
+  }
+  .name-usuario {
+    margin: 0;
+    width: 15%;
+    height: 100%;
+    margin-right: 25px;
+  }
+}
+@media (max-width: 430px) {
+  .container-usuarios {
+    width: 15%;
+    height: 30px;
+    margin: 0%;
+  }
+  .container-navbar > .name-usuario > button {
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+  }
+}
+// media 768px - 430 feed meio
+@media (max-width: 768px) {
+  .container-post {
+    width: 100%;
+    height: 100%;
+  }
+  .text-publi p {
+    margin: 0;
+    font-size: 12px;
+  }
+  .container-button {
+    margin: 0 auto;
+    width: 90%;
+    height: 80px;
+  }
+  .container-button button {
+    height: 50px;
+  }
+  .publi-post h1 {
+    font-size: 16px;
+  }
+  .publi-post > div > img {
+    width: 25px;
+    height: 25px;
+  }
+  .main-post {
+    height: 210px;
+  }
+  .baixar-publi img {
+    margin-bottom: 200px;
+  }
+  .nova-publi p {
+    font-size: 15px;
+  }
+  .publi-post {
+    height: 80px;
+    padding-bottom: 25px;
+  }
+  .foto-postagem img {
+    height: 380px;
+  }
+  .criador button {
+    width: 40px;
+    height: 40px;
+  }
+  .criador h3 {
+    font-size: 13px;
+  }
+  .criador span {
+    font-size: 12px;
+  }
+  .data-postagem p {
+    font-size: 13px;
+  }
+  .container-postagem {
+    height: 690px;
+  }
+}
+// media 768px - 430 nav bar esquerda
+@media (max-width: 768px) {
+  .pesquisar,
+  .sugestao-reload,
+  .card-none {
+    display: none;
+  }
+  .container-navDireita {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    height: 150px;
+    top: 72%;
+  }
+  .card img {
+    width: 100%;
+    height: 150px;
+  }
 }

@@ -23,8 +23,12 @@ function NavbarDireita() {
       <div className="criador-card">
         <div className="card">
           <img src={cardCriador} alt="cardCriador" />
-          <img src={cardCriador} alt="cardCriador" />
-          <img src={cardCriador} alt="cardCriador" />
+        </div>
+        <div className="card">
+          <img src={cardCriador} alt="cardCriador" className="card-none" />
+        </div>
+        <div className="card">
+          <img src={cardCriador} alt="cardCriador" className="card-none" />
         </div>
       </div>
     </div>
