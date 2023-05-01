@@ -6,9 +6,9 @@ import NavbarDireita from "../../components/NavbarDireita";
 function Feed() {
   return (
     <div>
+      <Navbar />
       <NavbarDireita />
       <Post />
-      <Navbar />
     </div>
   );
 }

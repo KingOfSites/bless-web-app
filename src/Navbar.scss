@@ -568,7 +568,7 @@
   }
   .text-publi p {
     margin: 0;
-    font-size: 12px;
+    font-size: 15px;
   }
   .container-button {
     margin: 0 auto;
@@ -579,7 +579,7 @@
     height: 50px;
   }
   .publi-post h1 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .publi-post > div > img {
     width: 25px;
@@ -599,26 +599,26 @@
     padding-bottom: 25px;
   }
   .foto-postagem img {
-    height: 380px;
+    height: 410px;
   }
   .criador button {
     width: 40px;
     height: 40px;
   }
   .criador h3 {
-    font-size: 13px;
+    font-size: 15px;
   }
   .criador span {
-    font-size: 12px;
+    font-size: 13px;
   }
   .data-postagem p {
-    font-size: 13px;
+    font-size: 15px;
   }
   .container-postagem {
     height: 690px;
   }
 }
-// media 768px - 430 nav bar esquerda
+// media 768px - 430 nav bar direita
 @media (max-width: 768px) {
   .pesquisar,
   .sugestao-reload,
@@ -633,10 +633,30 @@
     margin: 0;
     left: 0;
     height: 150px;
-    top: 72%;
+    top: 75%;
   }
   .card img {
     width: 100%;
     height: 150px;
+  }
+}
+@media (max-width: 430px) {
+  .container-navDireita {
+    top: 70%;
+  }
+  .text-publi p {
+    font-size: 12px;
+  }
+  .publi-post h1 {
+    font-size: 14px;
+  }
+  .criador h3 {
+    font-size: 12px;
+  }
+  .criador span {
+    font-size: 11px;
+  }
+  .data-postagem p {
+    font-size: 13px;
   }
 }
