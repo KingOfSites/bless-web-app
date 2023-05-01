@@ -15,17 +15,7 @@ export default function FormLogin() {
        <div className="container-form-login ">
         <div className="column">
           <h2>Bem-vindo à Bless</h2>
-        </div>
-       
-        <div className="column">
-         <ButtonGoogle onClick={function (): void {
-            throw new Error('Function not implemented.')
-          } } />
-        </div>
-         <div className="column-text-overlay">
-          <TextOverline texto="ou acesse com " />
-        </div>
-        
+        </div>  
         <div className="column">
           <label className='label'>E-mail</label>
           <input type="text" className='input  input-element'  />
@@ -36,6 +26,14 @@ export default function FormLogin() {
         </div>
         <div className="column">
          <Button children="ENTRAR"/>
+        </div>
+          <div className="column-text-overlay">
+          <TextOverline texto="ou acesse com " />
+        </div>
+        <div className="column">
+         <ButtonGoogle onClick={function (): void {
+            throw new Error('Function not implemented.')
+          } } />
         </div>
        
       </div>

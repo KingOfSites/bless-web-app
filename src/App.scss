@@ -379,7 +379,8 @@ $google-icon-size: 20px;
 }
 
 .login-form-content {
-  max-width: 512px;
+  display: flex;
+  flex:1;
 }
 
 .width-100perce {
