@@ -19,7 +19,7 @@ export default function FormLogin() {
           <img src={Logo}  alt="logos"/>
         </div>  
         <div className="column ">
-          <h2>Bem-vindo à Bless</h2>
+          <h2 style={{textAlign:"center"}}>Bem-vindo à Bless</h2>
         </div> 
         <div className="column">
           <label className='label'>E-mail</label>
