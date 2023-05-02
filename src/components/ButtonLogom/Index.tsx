@@ -4,13 +4,14 @@ import { ButtonHTMLAttributes, ReactNode } from 'react';
 import './style.scss'
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
+  iconShow? :boolean
 }
 
-export const Button = ({ children }: ButtonProps) => {
+export const Button = ({ children, iconShow=true }: ButtonProps) => {
   return (
     <>
       <button className="button">
-      {children} <FontAwesomeIcon icon={faArrowRightToBracket} className='icon'/>
+      {children} {iconShow && <FontAwesomeIcon icon={faArrowRightToBracket} className='icon'/>}
     </button>
     </>
   );

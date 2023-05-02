@@ -8,22 +8,31 @@
     width: 100%;
 }
 
+
+.icon-container-back {
+  width: 40px;
+  height: 40px;
+  background-color: #9400D3;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.back{
+  color: #fff;
+  font-size: 1.5rem;
+}
+.width100{
+    width: 100%;
+};
 .margin-top-20px {
   margin-top: 20px;
 }
 .justify-content-center {
   justify-content:center;
 }
-
-.justify-content-end {
-  justify-content: flex-end;
-}
 .align-items-center{
   align-items: center;
-}
-
-.align-items-end {
-  align-items: flex-end;
 }
 .column {
   width: 100%;
@@ -47,16 +56,8 @@ input {
   color: #fff;
   border-radius: 8px;
   height: 60px;
-}
 
-.link-form-login {
-  text-decoration: none;
-  color: white;
-  font-size: 0.7rem;
-  font-weight: bold;
-  cursor: pointer;
 
-  &:hover{
-      color: #9400D3;
-  }
+
+
 }

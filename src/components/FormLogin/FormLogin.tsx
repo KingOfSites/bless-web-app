@@ -7,6 +7,7 @@ import { Button } from '../ButtonLogom/Index'
 import InputPassword from '../InputPassword/Index'
 import TextOverline from '../TextoOverline/Index'
 import Logo from '../../assets/logo.svg'
+import { Link } from 'react-router-dom'
 export const children = 'ENTRAR'
 
 
@@ -16,7 +17,9 @@ export default function FormLogin() {
     <>
        <div className="container-form-login ">
         <div className="column flex align-items-center  justify-content-center margin-top-20px ">
-          <img src={Logo}  alt="logos"/>
+          <Link to="/"  >
+           <img src={Logo}  alt="logos"/>
+           </Link>
         </div>  
         <div className="column ">
           <h2 style={{textAlign:"center"}}>Bem-vindo à Bless</h2>
@@ -32,6 +35,16 @@ export default function FormLogin() {
         <div className="column">
          <Button children="ENTRAR"/>
         </div>
+        <div className="column">
+          <div className='flex flex-1'>
+            <div className='flex flex-1'>
+              <Link to="sign-up" className='link-form-login' >Cadastrar-se</Link>
+            </div>
+            <div className='flex flex-1  justify-content-end '>
+              <Link to="forgot-password" className='link-form-login' >Esqueceu a senha?</Link>
+            </div>
+          </div>
+        </div>
           <div className="column-text-overlay">
           <TextOverline texto="ou acesse com " />
         </div>
@@ -40,6 +53,7 @@ export default function FormLogin() {
             throw new Error('Function not implemented.')
           } } />
         </div>
+
        
       </div>
     </>
