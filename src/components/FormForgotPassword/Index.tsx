@@ -27,7 +27,7 @@ export default function FormForgotPassword() {
              <FontAwesomeIcon icon={faArrowLeft} className='back' />
             </div>
             </Link>
-            <div className='flex flex-1 width100 align-items-center padding-left-8px'>
+            <div className='flex flex-1 width100 align-items-center padding-left-16px'>
               <h2 style={{textAlign:"center"}}>
                 Recuperar Senha
               </h2>
