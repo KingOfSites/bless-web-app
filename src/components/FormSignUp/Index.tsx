@@ -28,7 +28,7 @@ export default function FormSignUp() {
              <FontAwesomeIcon icon={faArrowLeft} className='back' />
             </div>
             </Link>
-            <div className='flex flex-1 width100 align-items-center justify-content-center'>
+            <div className='flex flex-1 width100 align-items-center padding-left-8px '>
               <h2 style={{textAlign:"center"}}>
                 Cadastre-se na Bless
               </h2>
