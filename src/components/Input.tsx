@@ -1,11 +1,14 @@
 import { InputHTMLAttributes } from 'react';
-
-export const Input = (props: InputHTMLAttributes<HTMLInputElement>) => {
+ interface InputProps extends  InputHTMLAttributes<HTMLInputElement> {
+    labelText: String;
+} 
+export const Input = (props: InputProps) => {
   return (
-    <div className="separator20px flex flex-1 width100perc">
+    <div className=" width100perc  padding-form" style={{border:'none',background:'none'}}>
+      <label className='label'>{props.labelText}</label>
     <input
     {...props}
-    className="input"
+    className="input input-element "
     />
     </div>
    );

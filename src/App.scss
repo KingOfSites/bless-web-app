@@ -9,9 +9,50 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+    .input-element:focus::-webkit-input-placeholder {
+      color: transparent;
+    }
+  
+    .input-element:focus:-ms-input-placeholder {
+      color: transparent;
+    }
+  
+    .input-element:focus::placeholder {
+      color: transparent;
+    }
+  
+    .input-element:focus {
+      -webkit-text-fill-color: currentcolor !important;
+      caret-color: currentcolor !important;
+      -webkit-box-shadow: 0 0 0px 1000px #6C6C6C inset !important;
+      box-shadow: 0 0 0px 1000px #6C6C6C inset !important;
+
+        outline-color: #C5C5C5;
+          /* altere a cor para a desejada */
+          outline-style: solid;
+          outline-width: 1px;
+     
+     
+    }
+  
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-transition-delay: 9999s;
+      -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+      background-color: rgba(255, 0, 0, 0) !important;
+      color: currentcolor !important;
+      font-size: 1rem;
+
+     
+    }
+    
+
+
 
 .padding-form {
-  padding: 0px 15px;
+  padding: 0px 16px;
 }
 
 h1 {
@@ -186,22 +227,22 @@ h2 {
 }
 
 
-.input {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
-  background-color: #6C6C6C;
-  border: 1px solid #C5C5C5;
+input {
+  width: 100%;
+  padding: 0.5rem;
+  font-weight: 400;
+  border: none;
+  font-size: var(--fs-400) !important;
+  letter-spacing: 1px;
+  background: #6C6C6C;
+  color: #fff;
   border-radius: 8px;
-  padding: 15px 12px;
-  cursor: cursor;
-  transition: all 0.2s ease-in-out;
-  margin-bottom: 20px;
-  
-  &::placeholder {
-    color: #C5C5C5;
-  }
+  height: 45px;
+  font-size: 1rem;
+}
+
+input:focus{
+  border: 1px solid #C5C5C5 !important;
 }
 
 .button {
@@ -226,6 +267,14 @@ h2 {
   &:hover {
     background-color: #8B008B;
   }
+}
+
+.label{
+    margin-bottom: 0.25rem;
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    font-size: var(--fs-400);
 }
 
 .separator20px
@@ -274,7 +323,6 @@ $google-icon-size: 20px;
 
   .input {
     width: 100%;
-    margin-bottom: 20px;
 
   }
 
@@ -305,7 +353,6 @@ $google-icon-size: 20px;
   }
 
   .input {
-    margin-bottom: 20px;
     padding: 15px 12px;
     width: 100%;
   }
@@ -330,5 +377,16 @@ $google-icon-size: 20px;
   align-items: center;
   padding-top: 0%;
 }
+
+.login-form-content {
+  display: flex;
+  flex:1;
+}
+
+.width-100perce {
+  width: 100%;
+}
+
+
 
 
