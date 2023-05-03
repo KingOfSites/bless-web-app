@@ -30,9 +30,7 @@ function Navbar() {
           <img src={Favoritos} alt="Favoritos" />
           <h3>Favoritos</h3>
         </div>
-        <div className="container-usuarios">
-          <img src={Favoritos} alt="Favoritos" />
-        </div>
+
         <div className="container-usuarios">
           <img src={Usuario} alt="Usuario" />
           <h3>Meu pefil</h3>

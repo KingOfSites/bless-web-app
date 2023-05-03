@@ -492,7 +492,7 @@
 
     height: 100px;
     right: 0;
-    top: 90%;
+    top: 93%;
   }
   .container-navbar .container-button,
   h2 {
@@ -532,7 +532,7 @@
   .container-usuarios img {
     width: 45%;
     height: 70%;
-
+    object-fit: contain;
     margin: 0;
   }
   .container-usuarios > .assinatura {
@@ -558,6 +558,12 @@
     text-align: center;
     font-size: 25px;
     padding: 15px;
+  }
+  .container-usuarios img {
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+    margin: 0;
   }
 }
 // media 768px - 430 feed meio
@@ -633,7 +639,7 @@
     margin: 0;
     left: 0;
     height: 150px;
-    top: 75%;
+    top: 82%;
   }
   .card img {
     width: 100%;
@@ -641,9 +647,6 @@
   }
 }
 @media (max-width: 430px) {
-  .container-navDireita {
-    top: 70%;
-  }
   .text-publi p {
     font-size: 12px;
   }
