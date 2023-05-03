@@ -473,13 +473,13 @@
 .card {
   width: 90%;
   margin: 0 auto;
-  height: 180px;
-  margin-bottom: 15px;
+  height: 150px;
 }
 .card img {
   width: 100%;
   height: 100%;
   margin-bottom: 15px;
+  object-fit: contain;
 }
 // media 768px - 430 nav bar esquerda
 
@@ -492,7 +492,7 @@
 
     height: 100px;
     right: 0;
-    top: 93%;
+    top: 89%;
   }
   .container-navbar .container-button,
   h2 {
@@ -625,12 +625,14 @@
   }
 }
 // media 768px - 430 nav bar direita
+
 @media (max-width: 768px) {
   .pesquisar,
   .sugestao-reload,
   .card-none {
     display: none;
   }
+
   .container-navDireita {
     position: fixed;
     display: flex;
@@ -639,7 +641,7 @@
     margin: 0;
     left: 0;
     height: 150px;
-    top: 82%;
+    top: 71%;
   }
   .card img {
     width: 100%;
@@ -647,6 +649,9 @@
   }
 }
 @media (max-width: 430px) {
+  .container-navDireita {
+    top: 70%;
+  }
   .text-publi p {
     font-size: 12px;
   }
