@@ -1,0 +1,229 @@
+.container-navbar {
+  position: fixed;
+  width: 25%;
+  height: 1460px;
+  background: #222222;
+  box-shadow: 5px 0px 4px 2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  right: 75%;
+}
+.name-usuario {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  margin: 0 auto;
+}
+.name-usuario button {
+  width: 18%;
+  height: 70px;
+  border-radius: 50%;
+  background: #6c6c6c;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  margin-right: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  cursor: pointer;
+  color: #9400d3;
+}
+.name-usuario h2 {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: #9400d3;
+  margin: 0;
+}
+
+.opcoes-usuario {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.container-usuarios {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.container-usuarios img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+}
+
+.container-usuarios h3 {
+  width: 60%;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 28px;
+  margin-left: 30px;
+  color: #bebebe;
+}
+
+.container-usuarios .assinatura {
+  margin-left: 3px;
+}
+
+.container-btn-nav {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-btn-nav button img {
+  margin-right: 10%;
+}
+
+.container-btn-nav button {
+  width: 80%;
+  height: 65px;
+  border: none;
+  background-color: #9400d3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  cursor: pointer;
+}
+#button-roxo {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container-navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    position: fixed;
+    height: 65px;
+    right: 0;
+    bottom: 0;
+    box-shadow: none;
+  }
+  .name-usuario h2 {
+    display: none;
+  }
+  .container-navbar > .name-usuario > button {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    font-size: 14px;
+  }
+  .opcoes-usuario h3 {
+    display: none;
+    width: 45px;
+    height: 45px;
+  }
+  .opcoes-usuario {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+  }
+
+  .container-usuarios {
+    width: 16%;
+    height: 50px;
+    margin: 0%;
+  }
+  #button-roxo {
+    display: flex;
+  }
+
+  .container-usuarios img {
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    margin: 0;
+  }
+  .container-usuarios > .assinatura {
+    margin-top: 2px;
+    margin: 0;
+  }
+  .name-usuario {
+    margin: 0;
+    width: 15%;
+    height: 100%;
+    margin-right: 15px;
+  }
+  .container-btn-nav {
+    display: none;
+  }
+}
+
+// Ajuste fonte telas maiores
+@media (max-width: 1450px) {
+  .name-usuario h2 {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container-usuarios h3 {
+    font-size: 19px;
+  }
+
+  .name-usuario button {
+    font-size: 18px;
+    height: 60px;
+  }
+  .name-usuario h2 {
+    width: 50%;
+  }
+  .name-usuario h2 {
+    font-size: 19px;
+  }
+  .container-btn-nav button {
+    width: 95%;
+    font-size: 17px;
+  }
+  .container-btn-nav img {
+    width: 20px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .name-usuario button {
+    width: 25%;
+  }
+}

@@ -1,0 +1,133 @@
+.container-navDireita {
+  position: fixed;
+  width: 25%;
+  height: 1460px;
+  left: 75%;
+  background: #222222;
+  box-shadow: -5px 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.pesquisar {
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.pesquisar button {
+  width: 80%;
+  height: 60px;
+  border: none;
+  background: #636363;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #bebebe;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.pesquisar img {
+  margin-left: 80px;
+  width: 23px;
+  height: 23px;
+  margin-top: 3px;
+}
+
+.sugestao-reload {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  height: 70px;
+}
+.sugestao-reload h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #bebebe;
+}
+
+.sugestao-reload img {
+  width: 25px;
+  height: 25px;
+}
+.criador-card {
+  width: 100%;
+  height: 550px;
+  margin: 0 auto;
+
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card {
+  width: 90%;
+  margin: 0 auto;
+  height: 150px;
+  margin-bottom: 15px;
+}
+.card img {
+  width: 100%;
+  height: 150px;
+}
+.swiper-pagination-bullet {
+  --swiper-pagination-color: #9400d3;
+}
+
+@media (max-width: 768px) {
+  .pesquisar,
+  .sugestao-reload,
+  .card-none {
+    display: none;
+  }
+
+  .container-navDireita {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    height: 210px;
+    box-shadow: none;
+    bottom: 62px;
+  }
+  .card img {
+    width: 100%;
+    height: 150px;
+  }
+}
+
+// Ajuste fonte telas maiores
+@media (max-width: 1500px) {
+  .pesquisar button {
+    font-size: 17px;
+  }
+  .pesquisar img {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 1100px) {
+  .pesquisar button {
+    font-size: 12px;
+  }
+  .pesquisar img {
+    margin-left: 10px;
+  }
+}
