@@ -6,6 +6,7 @@ import Assinatura from "../../assets/logo-assinatura.png";
 import Favoritos from "../../assets/logo-favoritos.png";
 import Usuario from "../../assets/logo-usuario.png";
 import Button from "../../assets/button.png";
+import ButtonRoxo from "../../assets/button-roxo.png";
 
 function Navbar() {
   return (
@@ -26,6 +27,10 @@ function Navbar() {
         <div className="container-usuarios">
           <img src={Assinatura} alt="Assinatura" className="assinatura" />
           <h3>Assinaturas</h3>
+        </div>
+        <div className="container-usuarios" id="button-roxo">
+          <img src={ButtonRoxo} alt="Favoritos" />
+          <h3>Favoritos</h3>
         </div>
         <div className="container-usuarios">
           <img src={Favoritos} alt="Favoritos" />

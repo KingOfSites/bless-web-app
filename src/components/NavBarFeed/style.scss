@@ -1,7 +1,7 @@
 .container-navbar {
   position: fixed;
   width: 25%;
-  height: 1046px;
+  height: 1460px;
   background: #222222;
   box-shadow: 5px 0px 4px 2px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -46,6 +46,7 @@
   font-size: 30px;
   line-height: 38px;
   color: #9400d3;
+  margin: 0;
 }
 
 .opcoes-usuario {
@@ -123,6 +124,9 @@
 
   cursor: pointer;
 }
+#button-roxo {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .container-navbar {
@@ -130,24 +134,19 @@
     flex-direction: row-reverse;
     width: 100%;
     position: fixed;
-
-    height: 100px;
+    height: 65px;
     right: 0;
-    top: 89%;
+    bottom: 0;
+    box-shadow: none;
   }
-  .container-navbar .container-button,
-  h2 {
+  .name-usuario h2 {
     display: none;
   }
   .container-navbar > .name-usuario > button {
-    display: flex;
-    width: 90px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     margin: 0;
-    text-align: center;
-    font-size: 30px;
-    padding: 20px;
-    margin-bottom: 10px;
+    font-size: 14px;
   }
   .opcoes-usuario h3 {
     display: none;
@@ -159,20 +158,20 @@
     flex-direction: row;
     height: 100%;
     width: 100%;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
   }
 
   .container-usuarios {
-    width: 15%;
+    width: 16%;
     height: 50px;
     margin: 0%;
   }
+  #button-roxo {
+    display: flex;
+  }
 
   .container-usuarios img {
-    width: 45%;
-    height: 70%;
+    width: 100%;
+    height: 50%;
     object-fit: contain;
     margin: 0;
   }
@@ -184,29 +183,13 @@
     margin: 0;
     width: 15%;
     height: 100%;
-    margin-right: 25px;
+    margin-right: 15px;
+  }
+  .container-btn-nav {
+    display: none;
   }
 }
-@media (max-width: 430px) {
-  .container-usuarios {
-    width: 15%;
-    height: 30px;
-    margin: 0%;
-  }
-  .container-navbar > .name-usuario > button {
-    width: 80px;
-    height: 60px;
-    text-align: center;
-    font-size: 25px;
-    padding: 15px;
-  }
-  .container-usuarios img {
-    width: 70%;
-    height: 100%;
-    object-fit: contain;
-    margin: 0;
-  }
-}
+
 // Ajuste fonte telas maiores
 @media (max-width: 1450px) {
   .name-usuario h2 {

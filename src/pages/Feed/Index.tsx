@@ -7,6 +7,8 @@ function Feed() {
   return (
     <div>
       <Navbar />
+      <SideBar />
+      <Post />
     </div>
   );
 }
