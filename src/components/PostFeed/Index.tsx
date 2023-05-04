@@ -1,9 +1,10 @@
 import React from "react";
-import Reload from "../assets/recarragar.png";
-import Baixar from "../assets/logo-baixar.png";
-import PostImagem from "../assets/post-imagem.png";
-import Curtida from "../assets/curtida.png";
-import Comentario from "../assets/comentario.png";
+import "./style.scss";
+import Reload from "../../assets/recarragar.png";
+import Baixar from "../../assets/logo-baixar.png";
+import PostImagem from "../../assets/post-imagem.png";
+import Curtida from "../../assets/curtida.png";
+import Comentario from "../../assets/comentario.png";
 
 function Post() {
   return (

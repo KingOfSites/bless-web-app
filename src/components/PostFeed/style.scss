@@ -1,0 +1,250 @@
+.container-post {
+  margin-left: 11px;
+
+  width: 50%;
+  height: 1460px;
+  margin: 0 auto;
+  top: 0px;
+  background: #222222;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+.main-post {
+  width: 100%;
+  height: 350px;
+  left: 3px;
+  top: 0px;
+
+  background: #222222;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 20px 20px;
+}
+.publi-post {
+  width: 90%;
+  height: 120px;
+  background: #222222;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #bebebe;
+  border-left: 31px;
+  align-items: center;
+  margin: 0 auto;
+}
+.publi-post h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  margin: 39px 0px 0px 38px;
+}
+
+.publi-post img {
+  cursor: pointer;
+  margin: 49px 25px 10px 0px;
+  width: 30px;
+  height: 30px;
+}
+
+.nova-publi {
+  width: 90%;
+  height: 80px;
+  margin: 0 auto;
+}
+.nova-publi p {
+  width: 249.42px;
+  height: 28.84px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #bebebe;
+  margin: 25px 0px 0px 30px;
+}
+.baixar-publi {
+  width: 90%;
+  height: 110px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+.baixar-publi img {
+  margin-top: 50px;
+  margin-right: 20px;
+}
+.container-button {
+  width: 90%;
+  height: 100px;
+  left: -10px;
+  top: 0px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+}
+
+.container-button .button-feed {
+  background: #b9b9b9;
+  color: #2d2d2d;
+}
+.container-postagem {
+  width: 100%;
+  height: 680px;
+  background: #222222;
+  border-bottom: 1px solid #bebebe;
+}
+.info-postagem {
+  width: 100%;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.criador {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.criador button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  border: none;
+  margin-left: 30px;
+  margin-right: 13px;
+}
+.criador h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+.criador span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 35px;
+  color: #bebebe;
+}
+.data-postagem {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+.data-postagem p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0px 50px 50px 0px;
+  color: #bebebe;
+}
+.text-publi {
+  width: 90%;
+  margin: 0 auto;
+  height: 80px;
+}
+.text-publi p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: start;
+  color: #ffffff;
+  margin-bottom: 34px;
+}
+
+.foto-postagem {
+  width: 100%;
+  height: 415px;
+}
+.foto-postagem img {
+  width: 100%;
+  height: 100%;
+}
+.curtida-cometario {
+  width: 100%;
+  height: 60px;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+}
+.curtida-cometario img {
+  margin-left: 35px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .container-post {
+    width: 100%;
+    height: 100%;
+  }
+  .text-publi p {
+    margin: 0;
+    font-size: 15px;
+  }
+  .container-button {
+    margin: 0 auto;
+    width: 90%;
+    height: 80px;
+  }
+  .container-button button {
+    height: 50px;
+  }
+  .publi-post h1 {
+    font-size: 18px;
+  }
+  .publi-post > div > img {
+    width: 25px;
+    height: 25px;
+  }
+  .main-post {
+    height: 210px;
+  }
+  .baixar-publi img {
+    margin-bottom: 200px;
+  }
+  .nova-publi p {
+    font-size: 15px;
+  }
+  .publi-post {
+    height: 80px;
+    padding-bottom: 25px;
+  }
+  .foto-postagem img {
+    height: 410px;
+  }
+  .criador button {
+    width: 40px;
+    height: 40px;
+  }
+  .criador h3 {
+    font-size: 15px;
+  }
+  .criador span {
+    font-size: 13px;
+  }
+  .data-postagem p {
+    font-size: 15px;
+  }
+  .container-postagem {
+    height: 690px;
+  }
+}

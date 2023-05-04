@@ -1,10 +1,11 @@
 import React from "react";
-import Home from "../assets/logo-home.png";
-import Noticacao from "../assets/logo-notificacao.png";
-import Assinatura from "../assets/logo-assinatura.png";
-import Favoritos from "../assets/logo-favoritos.png";
-import Usuario from "../assets/logo-usuario.png";
-import Button from "../assets/button.png";
+import "./style.scss";
+import Home from "../../assets/logo-home.png";
+import Noticacao from "../../assets/logo-notificacao.png";
+import Assinatura from "../../assets/logo-assinatura.png";
+import Favoritos from "../../assets/logo-favoritos.png";
+import Usuario from "../../assets/logo-usuario.png";
+import Button from "../../assets/button.png";
 
 function Navbar() {
   return (
@@ -36,13 +37,11 @@ function Navbar() {
           <h3>Meu pefil</h3>
         </div>
       </div>
-      <div className="container-button">
-        <a href="/feed">
-          <button>
-            <img src={Button} alt="button-logo" />
-            Nova Publicação
-          </button>
-        </a>
+      <div className="container-btn-nav">
+        <button>
+          <img src={Button} alt="button-logo" />
+          Nova Publicação
+        </button>
       </div>
     </div>
   );

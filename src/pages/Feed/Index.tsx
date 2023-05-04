@@ -1,14 +1,12 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
-import Post from "../../components/Post";
-import NavbarDireita from "../../components/NavbarDireita";
+import Navbar from "../../components/NavBarFeed/Index";
+import Post from "../../components/PostFeed/Index";
+import SideBar from "../../components/SidebarFeed/Index";
 
 function Feed() {
   return (
     <div>
       <Navbar />
-      <NavbarDireita />
-      <Post />
     </div>
   );
 }

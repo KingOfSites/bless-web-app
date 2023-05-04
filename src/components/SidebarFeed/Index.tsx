@@ -1,9 +1,10 @@
 import React from "react";
-import Lupa from "../assets/lupa.png";
-import Reload from "../assets/recarragar.png";
-import cardCriador from "../assets/cardCriador.png";
+import "./style.scss";
+import Lupa from "../../assets/lupa.png";
+import Reload from "../../assets/recarragar.png";
+import cardCriador from "../../assets/cardCriador.png";
 
-function NavbarDireita() {
+function SideBar() {
   return (
     <div className="container-navDireita">
       <div className="pesquisar">
@@ -35,4 +36,4 @@ function NavbarDireita() {
   );
 }
 
-export default NavbarDireita;
+export default SideBar;
