@@ -127,7 +127,17 @@
 #button-roxo {
   display: none;
 }
-
+@media (max-width: 2560px) and (min-width: 1920px) {
+  .name-usuario h2 {
+    font-size: 40px;
+  }
+  .name-usuario button {
+    width: 20%;
+  }
+  .container-btn-nav button {
+    width: 85%;
+  }
+}
 @media (max-width: 768px) {
   .container-navbar {
     display: flex;
